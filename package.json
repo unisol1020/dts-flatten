@@ -7,7 +7,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "dts-flatten": "./dist/cli.js"
+    "dts-flatten": "dist/cli.js"
   },
   "exports": {
     ".": {
