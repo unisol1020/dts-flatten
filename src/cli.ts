@@ -25,7 +25,7 @@ function parse(argv: string[]): Args {
 function main(): void {
   const args = parse(process.argv.slice(2));
   if (!args.entry.length && !args.tsconfig) {
-    console.error("Usage: dts-resolver <entry.ts...> [-p tsconfig.json] [-o outDir] [--bundle]");
+    console.error("Usage: dts-flatten <entry.ts...> [-p tsconfig.json] [-o outDir] [--bundle] [--pretty]");
     process.exit(1);
   }
 

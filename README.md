@@ -1,4 +1,4 @@
-# dts-resolver
+# dts-flatten
 
 Generate minimal `.d.ts` by resolving TypeScript types down to their structural primitives.
 
@@ -45,7 +45,7 @@ What is kept by name (not inlined):
 ## Install
 
 ```sh
-npm install -D dts-resolver typescript
+npm install -D dts-flatten typescript
 ```
 
 `typescript` is a peer dependency.
@@ -53,7 +53,7 @@ npm install -D dts-resolver typescript
 ## API
 
 ```ts
-import { generate } from "dts-resolver";
+import { generate } from "dts-flatten";
 
 const { files } = generate({
   entry: ["src/models.ts"], // file(s), or use `tsconfig`
@@ -82,8 +82,8 @@ Provide exactly one source: `entry`, `tsconfig`, or `files`.
 ## CLI
 
 ```sh
-dts-resolver src/models.ts --bundle --pretty -o types
-dts-resolver -p tsconfig.json -o types
+dts-flatten src/models.ts --bundle --pretty -o types
+dts-flatten -p tsconfig.json -o types
 ```
 
 Without `-o`/`--out`, the resolved declarations are printed to stdout.
