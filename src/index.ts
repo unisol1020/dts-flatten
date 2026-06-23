@@ -104,7 +104,7 @@ function buildProgram(options: GenerateOptions): {
     if (!rootNames.length) rootNames = parsed.fileNames;
   }
 
-  if (!rootNames.length) throw new Error("dts-resolver: provide `entry`, `tsconfig`, or `files`.");
+  if (!rootNames.length) throw new Error("dts-flatten: provide `entry`, `tsconfig`, or `files`.");
 
   const program = ts.createProgram(rootNames, compilerOptions);
   const entries = rootNames
