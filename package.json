@@ -23,8 +23,16 @@
     "build": "tsup",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
+  "author": "Max Levchuk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unisol1020/dts-flatten.git"
+  },
+  "homepage": "https://github.com/unisol1020/dts-flatten#readme",
+  "bugs": "https://github.com/unisol1020/dts-flatten/issues",
   "keywords": [
     "typescript",
     "dts",
